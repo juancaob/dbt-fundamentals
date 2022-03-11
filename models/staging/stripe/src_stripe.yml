@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: dbt_data
+    database: airflow-tutorial-336317
+    schema: dbt_data
+    tables:
+      - name: stripe_payments
