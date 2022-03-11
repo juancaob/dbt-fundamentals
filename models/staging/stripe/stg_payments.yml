@@ -1,0 +1,16 @@
+version: 2
+
+models:
+  - name: stg_payments
+    description: Display the amount of payments returns.
+    columns:
+        - name: payment_id
+          description: It's the payments id
+          tests:
+            - unique
+            - not_null
+        - name: amount
+          description: Amount converted in dolars
+        - name: payment_method
+          description: '{{ doc("payment_methods")}}'
+        
